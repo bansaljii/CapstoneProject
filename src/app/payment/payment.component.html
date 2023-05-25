@@ -1,0 +1,65 @@
+<div class="container">
+    <form action="">
+        <div class="row">
+            <div class="col">
+                <h2>Delivery Address</h2>
+                <div class="inputBox">
+                    <span>Full Name :</span><br />
+                    <input type="text" required>
+                </div>
+                <div class="inputBox">
+                    <label>Email :</label><br />
+                    <input type="email" name="email" required>
+                </div>
+                <div class="inputBox">
+                    <span>Phone Number :</span><br />
+                    <input type="number" required>
+                </div>
+                <div class="inputBox">
+                    <span>Address & PinCode :</span><br />
+                    <input type="text" required>
+                </div>
+                <div class="inputBox">
+                    <span>City :</span><br />
+                    <input type="text" required>
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>State :</span><br />
+                        <input type="text" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Payment</h2>
+                <div class="inputBox">
+                    <span>Cards Accepted:</span><br />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAeSjPNu1DXH8AUcrHx8U_mUUWVZCH-AgMQX1p-VCo6KGGhVVYBY-r9s4ohaMyr9dzgg&usqp=CAU"
+                        alt="">
+                </div>
+                <div class="inputBox">
+                    <span>Card Holder Name:</span><br />
+                    <input type="text" required>
+                </div>
+                <div class="inputBox">
+                    <span>Credit Card Number:</span><br />
+                    <input type="number" required>
+                </div>
+                <div class="inputBox">
+                    <span>Exp Month & Year:</span><br />
+                    <input type="text">
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>CVV:</span><br />
+                        <input type="password" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <button style="margin:5px;" type="Submit" (click)="payNow()" class="btn submit-btn ">Pay Now</button>
+
+        <span>{{msg}}</span>
+    </form>
+</div>

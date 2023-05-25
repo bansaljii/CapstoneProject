@@ -1,0 +1,29 @@
+<!-- Displaying the Title and required buttons -->
+<header>
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <h1 style="text-align: center">SHOP FOR HOME</h1>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <button mat-raised-button style="margin-left:20px" routerLink="userregister" class="btn btn-outline-secondary">User</button>
+      <button mat-raised-button style="margin-left:20px" routerLink="adminsignup" class="btn btn-outline-secondary">Admin</button>
+      <button mat-raised-button style="margin-left:20px" routerLink="products" class="btn btn-outline-primary">Home</button>
+      <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)"
+      placeholder="Search Products">
+      <div>
+        <button mat-raised-button style="margin-right:20px" *ngIf="service.loggedIn()" routerLink="wishlist"
+          class="btn btn-outline-warning">Wishlist
+        </button>
+      </div>
+      <div>
+        <button mat-raised-button style="margin-right:20px" *ngIf="service.loggedIn()" routerLink="cart"
+          class="btn btn-outline-info">
+          <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+          <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+        </button>
+      </div>
+      <a mat-raised-button style="margin-right:20px" class="nav-link" routerLink="" *ngIf="service.loggedIn()"
+        (click)="service.logoutUser()" color="warn">Logout</a>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>

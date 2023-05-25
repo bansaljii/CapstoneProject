@@ -1,0 +1,66 @@
+h5{
+    color:black;
+    font-size: 30px;
+    text-align:center;
+}
+h1{
+    text-align:center;
+    font-size:40px;margin-top:2%; 
+    color:black;
+}
+
+table, th,td{
+        border: 1px solid black;
+        align-content: center;  
+        color:black;
+        text-align: center;   
+        margin-left: 20%;
+        margin-right:5px;
+        border-style: hidden;
+      }
+      th{
+        width: 5%;
+      }
+label{
+color:black;
+font-size:20px ;
+}
+.div-left{
+float:center;
+align-items: center;
+background-color: aqua ;
+border-style: outset;
+border-color: coral;
+border-width: 7px;
+border-radius: 30px;
+width: 400px;
+padding: 30px;
+padding-left: 10px;
+margin: 20px;
+    }
+.div-right{
+float:center;
+align-items: center;
+background-color: aqua ;
+border-style: outset;
+border-color: coral;
+border-width: 7px;
+border-radius: 30px;
+width: 400px;
+padding: 18px;
+padding-right: 10px;
+margin: 20px;      
+    }
+.card{
+float: right;
+align-items: center;
+background-color:white;
+border-style: outset;
+border-width: 50px;
+border-radius: 30px;
+margin: 50px;
+width: 400px;
+border:#fff;
+ }
+
+   

@@ -1,0 +1,35 @@
+<!-- Generating the Billing Amount -->
+<h1>Cart Summary</h1>
+<section id="cart-bottom" class="container">
+    <div class="row">
+        <div class="coupon  col-lg-6 col-md-6 col-12 mb-4">
+            <div>
+                <h5>COUPON</h5>
+                <p>Enter your coupon code if you have one</p>
+                <input type="text" placeholder="Coupon Code" id = "coupon" [(ngModel)] = code/>
+                <button style="margin:2px;" type="Submit" id="sub" class="btn btn-dark" (click)="applyCoupon()">APPLY COUPON</button>
+                {{msg}}
+            </div>
+        </div>
+        <div class="total  col-lg-6 col-md-6 col-12 ">
+            <div>
+                <h5>CART TOTAL</h5>
+                <div class="d-flex justify-content-between">
+                    <h6>GRAND TOTAL </h6>
+                    <p>{{grandTotal | currency:'INR'}}</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <h6>Shipping Amount</h6>
+                    <p>FREE</p>
+                </div>
+                <hr class="second-hr">
+                <div class="d-flex justify-content-between">
+                    <h6>Total</h6>
+                    <p>{{final1 | currency:'INR'}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <button routerLink="/payment" class="btn btn-success">Proceed to Payment</button>

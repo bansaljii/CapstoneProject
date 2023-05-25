@@ -1,0 +1,53 @@
+.card-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    color: rgba(0, 0, 0, 0.755);
+    background-image: url(https://wallpaperaccess.com/full/676550.jpg);
+    background-clip: border-box;
+    border: 1px solid #00000033;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(0, 0, 0, 0.755);
+    object-fit: cover;
+    border-radius: 60px;
+}
+.item {
+    margin: 0px 15px;
+    text-align: center;
+}
+
+.item a:hover {
+    color: black;
+}
+
+.card {
+    padding: 20px;
+    margin: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    margin-left: 45px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.5);
+}
+
+/*.fa-heart{
+    color: red;
+    cursor: pointer;
+    padding:20px;
+}*/

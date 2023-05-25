@@ -1,0 +1,28 @@
+<!-- Loging as user with registered credentials -->
+<mat-card style="text-align: center;">
+    <mat-card-title>User Login</mat-card-title>
+    <form [formGroup]="loginForm">
+        <p>
+            <mat-form-field style="width:400px !important">
+                <input matInput type="text" formControlName="email" placeholder="Enter email here" required />
+                <mat-error>Enter Email</mat-error>
+                <mat-hint>Email</mat-hint>
+            </mat-form-field>
+        </p>
+        <!-- Input for password -->
+        <P>
+            <mat-form-field style="width:400px !important">
+                <input matInput type="password" formControlName="password" placeholder="Enter password here" required />
+                <mat-error>Enter password</mat-error>
+                <mat-hint>Password</mat-hint>
+            </mat-form-field>
+        </P>
+        <button mat-raised-button class="btn btn-primary" color="accent" (click)=onSubmit()>
+            Login
+        </button>
+    </form>
+    <br />
+    <a style="color:rgb(23, 15, 15);margin-top: 10px;" routerLink="/userregister">New User? Click to
+        SignUp!!</a>
+    <br />
+</mat-card>

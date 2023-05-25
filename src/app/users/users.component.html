@@ -1,0 +1,41 @@
+<!-- Updating the existing user information -->
+<div>
+    <div class="card">
+        <div *ngIf="flag">
+            <h5>Update Details</h5>
+            <form (ngSubmit)="updateUserInfo()">
+                <label>Email</label><br />
+                <input type="text" name="email" [(ngModel)]="email" readonly /><br />
+                <label>Password</label><br />
+                <input type="text" name="password" [(ngModel)]="password" /><br /><br />
+                <button style="margin:5px;" type="submit" class="btn btn-primary">Update User</button>
+                <button style="margin:5px;" type="reset" class="btn btn-primary ">Reset</button><br />
+            </form>
+        </div>
+    </div>
+    <br />
+    <b><span style="color:rgb(0, 0, 0);font-size: 20px; align-items: center;margin-left:45%;">{{updateMsg}}</span></b>
+    <br />
+    <!-- Displaying the User details in a table -->
+    <h1>User Details</h1><br />
+    <table style="border:1px solid black;margin-left:10px;margin-right:auto;">
+        <tr>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Date</th>
+            <th>Delete User</th>
+            <th>Update User</th>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td>{{user.email}}</td>
+            <td>{{user.password }}</td>
+            <td>{{dd| date:'short'}}</td>
+            <td><input type="button" value="Delete" class="btn btn-danger" (click)="deleteUser(user.email)" /></td>
+            <td><input type="button" value="Update" class="btn btn-success" (click)="updateUser(user)" /></td>
+        </tr>
+    </table>
+    <br />
+    <b><span style="color:rgb(0, 0, 0);font-size: 20px;margin-left:45%;">{{deleteMsg}}</span></b>
+    <br />
+    <span style="color: rgb(0, 0, 0);font-size:20px;text-align:center;">{{logoutMsg}}</span>
+</div>

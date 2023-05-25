@@ -1,0 +1,49 @@
+<ng-container *ngIf="products.length == 0">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+                <h3 style="background-color: white; text-align:center">Wishlist is empty.... <br> Shop now :)</h3>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="products.length !=0">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Sr.No</th>
+                            <th>Product Name</th>
+                            <th>Product Image</th>
+                            <th>Price</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let product of products; let i = index">
+                            <td>{{i+1}}</td>
+                            <td style="width:15% ;">{{product.pname }}</td>
+                            <td style="width: 10%;"><img class="card-img-top" src='{{product.url}}' height=80px />
+                            </td>
+                            <td style="width:15% ;">{{product.price | currency:'INR'}}</td>
+                            <td>{{product.category}}</td>
+                            <td style="width: 20%;">{{product.quantity}}
+                            </td>
+                            <td>
+                                <button (click)="removeItem(product)" class="btn btn-danger"><i
+                                        class="fas fa-trash-alt"></i></button>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</ng-container>

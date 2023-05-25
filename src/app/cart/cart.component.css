@@ -1,0 +1,83 @@
+.card{
+    height: 60vh;
+    margin:25px;
+    padding: 25px;
+}
+.center img{
+    text-decoration: none;
+    color:inherit;
+    border: none;
+    outline: none;
+    height: 162px;
+    width: 250px;
+  margin: 20px 0px;
+}
+h4,h6{
+    font-weight: 400;
+}
+.center{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+th,td {
+    border-style: hidden;
+  }
+.card-table{
+    position: relative;
+    flex-direction: column;
+    min-width: none;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius: .25rem;
+}
+.center.btn{
+    font-size: 14px !important;
+    margin-top: 20px !important;
+    font-weight: 400px;
+    padding:12px 72px;
+    border-radius: 3px !important;
+}
+ .coupon>div{
+    border: 2px solid rgb(0, 0, 0) ;
+    padding:6px;
+    margin-right: 5%;
+    }
+    
+    .row h5{
+      background:black ;
+      color: #fff;
+      border: none;
+      padding: 6px 12px;
+      font-weight: 700;
+     
+        }
+.total>div{
+            border: 2px solid magenta ;
+            padding: 6px;
+            }
+            
+.row h6{
+      background:deepskyblue ;
+      color: #fff;
+      border: none;
+      padding: 6px 12px;
+      font-weight: 700;
+      }
+  i{
+      text-align: right;
+    }
+.submit-btn{
+  background-color: black;
+ color:#fff;
+}
+.btn-success{
+  float:right;
+  margin-right:20%;
+  margin-top: 30px;
+  
+}
